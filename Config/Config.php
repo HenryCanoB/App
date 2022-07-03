@@ -6,6 +6,5 @@ const DB_HOST = 'localhost';
 const DB_NAME = 'bdsistema';
 const DB_USER = 'root';
 const DB_PASSWORD = '12345678';
-const PRUEBAA = '12345678';
 
 ?>
