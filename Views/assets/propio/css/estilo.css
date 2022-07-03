@@ -1,0 +1,87 @@
+#sidebar1 {
+    margin-left: -240px;
+}
+
+#sidebar1.active {
+    margin-left: 0px;
+}
+
+#contenido {
+    margin-left: 240px;
+}
+
+#contenido.active {
+    margin-left: 0px;
+}
+
+#footer {
+    margin-left: 240px;
+}
+
+#footer.active {
+    margin-left: 0px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    top: 0px;
+    right: 0px;
+}
+
+#spinner {
+    display: none;
+    z-index: 1000;
+}
+
+#spinner.active {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1030;
+    transition: all 0.5s ease-in-out;
+    top: 0px;
+    right: 0px;
+    opacity: 0.7;
+}
+
+@media (max-width: 991px) {
+    .overlay {
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        ;
+        z-index: 998;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    .overlay.active {
+        display: block;
+        opacity: 1;
+    }
+    #sidebar1.active {
+        margin-left: 0;
+    }
+    #contenido {
+        margin-left: 0px;
+    }
+    #contenido.active {
+        margin-left: 0px;
+    }
+    #footer {
+        margin-left: 0px;
+    }
+    #footer.active {
+        margin-left: 0px;
+    }
+}
